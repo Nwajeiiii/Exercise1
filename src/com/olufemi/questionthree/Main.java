@@ -17,6 +17,7 @@ public class Main {
 
 //    pass an anonymous inner class as method argument
 
+
     }
 
 }
