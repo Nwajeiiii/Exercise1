@@ -47,7 +47,8 @@ public class Vehicle {
         this.owner = owner;
     }
 
-    public class Owner{
+//    implementing an inner static class
+    public static class Owner{
 
         private String ownerName;
         private int cnicNumber;
@@ -82,6 +83,10 @@ public class Vehicle {
         public void setPhoneNumber(String phoneNumber) {
             this.phoneNumber = phoneNumber;
         }
+    }
+
+    void printOwnerDetails(Vehicle.Owner owner) {
+        System.out.println(owner);
     }
 
 }

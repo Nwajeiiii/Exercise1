@@ -20,11 +20,11 @@ public class Main {
         car.setVehicleName("Honda");
         System.out.println("Car Name: " + car.getVehicleName());
 
-        Vehicle.Owner owner = car.new Owner("John Doe", 12345-67890, "1234567890");
+        Vehicle.Owner owner = new Vehicle.Owner("John Doe", 12345-67890, "1234567890");
         owner.setOwnerName("Jane Doe");
         System.out.println("Owner Name: " + owner.getOwnerName());
 
-        Vehicle.Owner anonymousOwner = car.new Owner("John Doe", 12345-67890, "1234567890") {
+        Vehicle.Owner anonymousOwner = new Vehicle.Owner("John Doe", 12345-67890, "1234567890") {
             @Override
             public String getOwnerName() {
                 return "Anonymous Owner";
@@ -35,6 +35,8 @@ public class Main {
 
 
 //    pass an anonymous inner class as method argument
+        Vehicle v = new Vehicle("Suzuki", "1300", "Cultus");
+        car.printOwnerDetails(new Vehicle.Owner("John Doe", 1234567890, "0300000000"));
 
 
     }
