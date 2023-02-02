@@ -8,7 +8,7 @@ public class Matrix {
     private int columns;
 
     private int[][] elements;
-;
+
     private Scanner scanner = new Scanner(System.in);
 
     public Matrix(int rows, int columns) {
