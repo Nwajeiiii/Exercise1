@@ -24,13 +24,13 @@ public class Main {
         owner.setOwnerName("Jane Doe");
         System.out.println("Owner Name: " + owner.getOwnerName());
 
-        Vehicle.Owner anonymousOwner = new Vehicle.Owner("John Doe", 12345-67890, "1234567890") {
+        new Vehicle.Owner("John Doe", 12345-67890, "1234567890") {
             @Override
             public String getOwnerName() {
                 return "Anonymous Owner";
             }
         };
-        System.out.println("Anonymous Owner Name: " + anonymousOwner.getOwnerName());
+//        System.out.println("Anonymous Owner Name: " + anonymousOwner.getOwnerName());
 
 
 
